@@ -50,7 +50,34 @@ Distance = (Speed x Time) / 2 = (34cm/ms x 1.5ms) / 2 = 25.5cm.
 So, if the Echo pin was HIGH for 2ms (which we measure using the pulseIn() function), the distance from the sensor to the object is 34cm.
 
 ## PROGRAM:
+int trigPin = 9; </br>
+int echoPin = 8; </br>
+float duration_us, distance_cm; </br>
+
+void setup() { </br>
+
+Serial.begin (9600); </br>
+pinMode(trigPin, OUTPUT); </br>
+pinMode(echoPin, INPUT);</br>
+}</br>
+void loop() { </br>
+
+ digitalWrite(trigPin, HIGH);</br>
+ 
+delayMicroseconds(10);</br>
+digitalWrite(trigPin, LOW);</br>
+duration_us = pulseIn(echoPin, HIGH); </br>
+distance_cm = 0.017 * duration_us; </br>
+Serial.print("distance: ");</br>
+Serial.print(distance_cm); </br>
+Serial.println(" cm"); delay(500);</br>
+}</br>
 ## CIRCUIT DIAGRAM:
+![image](https://user-images.githubusercontent.com/132323363/235734745-9d546d7c-34b0-4a37-b242-d0fd2e94bacb.png)
+
 ## OUTPUT:
+![image](https://user-images.githubusercontent.com/132323363/235735674-7d7df1a4-c494-47ab-a7d5-c1c7523cc624.png)
+
+
 ## RESULT:
 Thus the distance of the obstacle is measured using ultrasonic sensor and display the value in serial monitor using Arduino UNO controller.
