@@ -73,10 +73,14 @@ Serial.print(distance_cm); </br>
 Serial.println(" cm"); delay(500);</br>
 }</br>
 ## CIRCUIT DIAGRAM:
-![image](https://user-images.githubusercontent.com/132323363/235734745-9d546d7c-34b0-4a37-b242-d0fd2e94bacb.png)
+
+![U1](https://user-images.githubusercontent.com/132778872/236640452-5900d43e-9bbe-47dc-8797-8e4de4af2e84.png)
+
 
 ## OUTPUT:
-![image](https://user-images.githubusercontent.com/132323363/235735674-7d7df1a4-c494-47ab-a7d5-c1c7523cc624.png)
+
+![U1](https://user-images.githubusercontent.com/132778872/236640474-458bea13-09da-4e27-afb8-ee6596a17952.png)
+
 
 
 ## RESULT:
